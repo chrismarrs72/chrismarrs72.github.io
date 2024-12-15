@@ -1,6 +1,6 @@
 /*
  *  ======== httpget.c ========
- *  HTTP Client GET example application
+ *  HTTP Client GET/POST
  */
 
 /* BSD support */
