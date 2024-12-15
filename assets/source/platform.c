@@ -23,13 +23,13 @@
 #define SLNET_IF_WIFI_PRIO                    (5)
 #define SLNET_IF_WIFI_NAME                    "CC32xx"
 /* AP SSID */
-#define SSID_NAME                             "KampChristy-2_5"
+#define SSID_NAME                             "exSSID"
 
 /* Security type could be SL_WLAN_SEC_TYPE_WPA_WPA2 or SL_WLAN_SEC_TYPE_OPEN*/
 #define SECURITY_TYPE                         SL_WLAN_SEC_TYPE_WPA_WPA2
 
 /* Password of the secured AP */
-#define SECURITY_KEY                          "smartmarket349"
+#define SECURITY_KEY                          "exPASSWORD"
 
 pthread_t httpThread = (pthread_t)NULL;
 pthread_t spawn_thread = (pthread_t)NULL;
