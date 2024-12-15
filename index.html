@@ -121,12 +121,41 @@
                     <p class="lead mb-5">
                         <h2>Code Review</h2>
                         <p class="lead mb-5">
-                            <h4>Introduction</h4>
+                            <h4>Why we do code reviews</h4>
                         </p>
                         <p class="lead mb-5">
-                            The SNHU Computer Science Program has been a valuable experience. It allowed me to showcase my technical skills, add to my professional goals, and add more knowledge and experience to my professional career in software development, both as an architect and a software engineer. Throughout the course, I worked on my problem-solving abilities, improved my technical skills, and adopted collaborative practices, which are vital for thriving within a dynamic industry. My ePortfolio and my completed coursework have helped me to solidify my knowledge in software engineering, data structure and algorithms, databases and security. These experiences not only improved my knowledge, but also helped me align professional goals and expectations with industry values.
+                            A code review, after a developer completes the coding process, is an essential step to the development of software. It allows a second viewpoint on the implementation and solution before the branch can be merged with an upstream branch such as a feature or main branch. Reviewers can act as second steps in finding bugs, logic issues, edge cases or other issues.
                         </p>
+                        <p class="lead mb-5">
+                            Developing a strong code review process sets a foundation for continuous improvement and prevents unstable code from shipping to customers. Code reviews should become part of a software development team’s process to improve code quality and provide transparency to the codebase. The code review process is also an important part in spreading knowledge throughout an organization.
                         </p>
+                        <p class="lead mb-5">
+                            For my code review, I’ve created a structured outline for each category, focusing on specific aspects as guided by the rubric and code review checklist.
+                        </p>
+                        <p class="lead mb-5">
+                            <h5>Software Engineering and Design:</h5>
+                            <ul>
+                                <li>Objective: Analyze the overall structure, modularity, documentation, and adherence to coding standards.</li>
+                                <li>Checklist Focus: I examine the code for redundant logic, opportunities for modularization, and coding style consistency. Highlight any "magic numbers" or blocks of code that could be replaced with reusable functions or constants.</li>
+                                <li>Script Outline: An overview of the main design, then point out areas where modular functions could improve readability and reusability. Review commenting style and any areas where documentation could be enhanced.</li>
+                            </ul>
+                            <h5>Algorithms and Data Structures:</h5>
+                            <ul>
+                                <li>Objective: Look at the logic and fit-for-purpose of data structures used within code.  Most importantly within its main loop where tasks are executed at regular time intervals.</li>
+                                <li>Checklist Focus: Assess algorithmic efficiency, opportunities to optimize logic and whether common cases are handled efficiently as well as any unnecessary complexity that needs refactoring.</li>
+                                <li>Script Outline: Overview of the approach while noting areas for potential improvement within time-based logic. Also discussing the plan to implement a priority queue scheduler, including how it addresses specific checklist items such as loop optimization or minimizing repeated logic.</li>
+                            </ul>
+                            <h5>Databases:</h5>
+                            <ul>
+                                </li>Objective: Develop a database solution which addresses the absence of persistent data storage within code.</li>
+                                </li>Checklist Focus: As there's currently no database functionality in my code, with a priority to create a secure database connection using MongoDB with RESTful API access for data secure storage and secure retrieval.</li>
+                                </li>Script Outline: Describe the shortcomings in current code regarding data persistence, then lay out the plan to incorporate MongoDB as part of it. Furthermore, emphasize error handling techniques as well as defensive programming practices to protect integrity and stability for data.</li>
+                            </ul>
+                        </p>
+                        <p class="lead mb-5">
+                            <a href="https://youtu.be/KNq6Q0r7HcY" target="_blank">Code Review Demo</a>
+                        </p>
+                    </p>
                 </div>
             </section>
             <hr class="m-0" />
@@ -146,7 +175,10 @@
                         This artifact was chosen for my ePortfolio as it demonstrates my ability to design and implement an actual embedded system. This artifact demonstrates essential skills for computer science positions that require a solid understanding of both hardware and software interfaces. My commitment to clean, maintainable design is reflected in the modular code structure that organizes tasks like temperature reading, handling user input, updating displays, and controlling heaters. My understanding of real-time performance optimization reflects in the addition of a prioritization-based scheduling system, which enables more efficient task management. In addition, I used defensive programming, error handling and initialization routines to create a fault-tolerant and robust system. This part of the enhancement shows my ability to build resilient software capable of handling unexpected errors gracefully. The extensive documentation and the clear variable naming standards emphasize readability. This makes the codebase simpler for future developers.
                     </p>
                     <p class="lead mb-5">
-                        <h4>Aligned Outcomes:</h4>
+                        The artifact is a significant improvement over its original form and has been improved in many ways. It now features a modular design that separates the major functionality into functions. This improves readability and facilitates debugging and testing. I replaced hard-coded constants with named ones, making system settings clearer and easier to modify. The error-handling routines improved system stability by adding resilience to UART/I2C communication, and handling device failures. Moreover, I implemented an optimization system based on priority that prioritizes time-sensitive tasks and reduces the frequency of checking.
+                    </p>
+                    <p class="lead mb-5">
+                        <h5>Aligned Outcomes:</h5>
                         <ul>
                             <li>
                                 Outcome 3 - the modifications enable the design and evaluation a solution that is efficient and takes advantage of best practices for modularity and schedule. 
@@ -155,9 +187,6 @@
                                 Outcome 4 - the modifications demonstrate the use of professional principles of software engineering, such as modular design, readability and fault tolerance, all of which are essential in real software development.
                             </li>
                         </ul>
-                    </p>
-                    <p class="lead mb-5">
-                        The artifact is a significant improvement over its original form and has been improved in many ways. It now features a modular design that separates the major functionality into functions. This improves readability and facilitates debugging and testing. I replaced hard-coded constants with named ones, making system settings clearer and easier to modify. The error-handling routines improved system stability by adding resilience to UART/I2C communication, and handling device failures. Moreover, I implemented an optimization system based on priority that prioritizes time-sensitive tasks and reduces the frequency of checking.
                     </p>
                     <p class="lead mb-5">
                         <a href="https://github.com/chrismarrs72/chrismarrs72.github.io/blob/e31e259a2bdafa11eaf8f7ba2ac1146c17367c8e/assets/source/gpiointerrupt.c" target="_blank">Thermostat Main File</a>
@@ -176,7 +205,7 @@
                         Several improvements have been made. A priority-based scheduler was introduced instead of one that used polling of a timer. The importance of tasks like temperature checks, button handling and display updates is now based on time. A priority queue was implemented to manage tasks efficiently. To ensure tasks are completed in order, they are given a priority and a deadline. A priority queue also eliminated redundant loops and checks, reducing the computational load of the system. The data structure was added to store the readings for display later or updating a database.
                     </p>
                     <p class="lead mb-5">
-                        <h4>Aligned Outcomes:</h4>
+                        <h5>Aligned Outcomes:</h5>
                         <ul>
                             <li>
                                 Outcome 3 - the priority-based scheduling algorithm demonstrates my ability to design and evaluate an efficient computing solution, leveraging algorithmic principles to address task management challenges in an embedded system.
@@ -189,6 +218,44 @@
                     <p class="lead mb-5">
                         <a href="https://github.com/chrismarrs72/chrismarrs72.github.io/blob/e31e259a2bdafa11eaf8f7ba2ac1146c17367c8e/assets/source/gpiointerrupt.c" target="_blank">Thermostat Main File</a>
                     </p>
+                    <p class="lead mb-5">
+                        <h4>Enhancement Three - Databases</h4>
+                    </p>
+                    <p class="lead mb-5">
+                        The artifact selected for this milestone is an Embedded Thermostat System developed for the TI SimpleLink WiFi CC3220S LaunchXL platform with integrated cloud-based data logging and retrieval functionalities. Initially created during CS 350: Emerging Systems Architectures and Technologies, this system was designed to read and control temperature settings while managing heating or cooling units. The database integration enhancement adds the ability to store real-time sensor data and user-defined settings in a cloud-hosted MongoDB database. The artifact also incorporates an AWS Lambda-based API to handle Create, Read, Update, and Delete (CRUD) operations for seamless communication between the embedded system and the database.
+                    </p>
+                    <p class="lead mb-5">
+                        This artifact is included in my ePortfolio because it demonstrates my ability to design and implement database-driven solutions, a critical skill in modern computer science practices. Specific components of the artifact that showcase my abilities include:
+                    </p>
+                    <p class="lead mb-5">
+                        The artifact has undergone several significant enhancements:
+                        Database Integration - added MongoDB/DocumentDB support for storing real-time temperature readings, set-point values, and system statuses.
+                        CRUD Operations via REST API and AWS Lambda functions were developed to provide API endpoints for the embedded system, allowing external systems or applications to retrieve and modify thermostat data.
+                        Data Validation and Error Handling - robust error-handling mechanisms were implemented in both the embedded system and the Lambda functions to ensure data integrity and mitigate potential security risks.
+                        Performance Optimization - in the design are query optimizations to ensure efficient data retrieval for real-time monitoring.
+                        Modular Design - the database-related logic was modularized to make the codebase more maintainable and scalable.
+                        </p>
+                    <p class="lead mb-5">
+                        <h5>Aligned Outcomes:</h5>
+                        <ul>
+                            <li>
+                                Outcome 3 (Design and evaluate computing solutions): The database design and integration showcase my ability to design solutions for managing and accessing structured data in real time.
+                            </li>
+                            <li>
+                                Outcome 4 (Use well-founded and innovative techniques): Implementing MongoDB/DocumentDB with AWS Lambda reflects the application of innovative techniques to achieve efficient, scalable database management.
+                            </li>
+                            <li>
+                                Outcome 5 (Develop a security mindset): Error-handling and input-validation measures address potential vulnerabilities, ensuring the system's reliability and security.
+                            </li>
+                        </ul>
+                    </p>
+                    <p class="lead mb-5">
+                        <a href="https://github.com/chrismarrs72/chrismarrs72.github.io/blob/e31e259a2bdafa11eaf8f7ba2ac1146c17367c8e/assets/source/gpiointerrupt.c" target="_blank">Thermostat Main File</a>
+                        <a href="https://github.com/chrismarrs72/chrismarrs72.github.io/blob/bccead8549f99c6f12fea37c1d819c7e9378bde8/assets/source/httpget.c" target="_blank">HTTP GET/POST</a>
+                        <a href="https://github.com/chrismarrs72/chrismarrs72.github.io/blob/a9a7dd5ba859f1bba9a9940ca1fb979c3c8b5bed/assets/source/platform.c" target="_blank">HTTP Driver</a>
+                        <a href="https://github.com/chrismarrs72/chrismarrs72.github.io/blob/bccead8549f99c6f12fea37c1d819c7e9378bde8/assets/source/aws-crud-documentdb.py" target="_blank">API Lambda</a>
+                    </p>
+
                 </div>
             </section>
             <hr class="m-0" />
@@ -198,20 +265,28 @@
                     <h2 class="mb-5">Education</h2>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">University of Colorado Boulder</h3>
+                            <h3 class="mb-0">Southern New Hampshire University</h3>
                             <div class="subheading mb-3">Bachelor of Science</div>
-                            <div>Computer Science - Web Development Track</div>
-                            <p>GPA: 3.23</p>
+                            <div>Computer Science</div>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">August 2006 - May 2010</span></div>
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">James Buchanan High School</h3>
-                            <div class="subheading mb-3">Technology Magnet Program</div>
-                            <p>GPA: 3.56</p>
+                            <h3 class="mb-0">Casper College</h3>
+                            <div class="subheading mb-3">Computer Engineering</div>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">August 2002 - May 2006</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Casper College</h3>
+                            <div class="subheading mb-3">Electrical Engineering</div>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Rensselaer Polytechnic Institute (RPI)</h3>
+                            <div class="subheading mb-3">Aerospace Engineering</div>
+                        </div>
                     </div>
                 </div>
             </section>
