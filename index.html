@@ -125,14 +125,14 @@
                         <p class="lead mb-5">
                             <h4>Why we do code reviews</h4>
                         </p>
-                        <p class="lead mb-5">
+                        <p class="lead">
                             A code review, after a developer completes the coding process, is an essential step to the development of software. It allows a second viewpoint on the implementation and solution before the branch can be merged with an upstream branch such as a feature or main branch. Reviewers can act as second steps in finding bugs, logic issues, edge cases or other issues.
                             <br>
                             Developing a strong code review process sets a foundation for continuous improvement and prevents unstable code from shipping to customers. Code reviews should become part of a software development team’s process to improve code quality and provide transparency to the codebase. The code review process is also an important part in spreading knowledge throughout an organization.
                             <br>
                             For my code review, I’ve created a structured outline for each category, focusing on specific aspects as guided by the rubric and code review checklist.
                             <h5>Software Engineering and Design:</h5>
-                            <div class="lead mb-5">
+                            <div class="lead">
                             <ul>
                                 <li>Objective: Analyze the overall structure, modularity, documentation, and adherence to coding standards.</li>
                                 <li>Checklist Focus: I examine the code for redundant logic, opportunities for modularization, and coding style consistency. Highlight any "magic numbers" or blocks of code that could be replaced with reusable functions or constants.</li>
@@ -140,7 +140,7 @@
                             </ul>
                             </div>
                             <h5>Algorithms and Data Structures:</h5>
-                            <div class="lead mb-5">
+                            <div class="lead">
                             <ul>
                                 <li>Objective: Look at the logic and fit-for-purpose of data structures used within code.  Most importantly within its main loop where tasks are executed at regular time intervals.</li>
                                 <li>Checklist Focus: Assess algorithmic efficiency, opportunities to optimize logic and whether common cases are handled efficiently as well as any unnecessary complexity that needs refactoring.</li>
@@ -148,14 +148,16 @@
                             </ul>
                             </div>
                             <h5>Databases:</h5>
-                            <div class="lead mb-5">
+                            <div class="lead">
                             <ul>
                                 <li>Objective: Develop a database solution which addresses the absence of persistent data storage within code.</li>
                                 <li>Checklist Focus: As there's currently no database functionality in my code, with a priority to create a secure database connection using MongoDB with RESTful API access for data secure storage and secure retrieval.</li>
                                 <li>Script Outline: Describe the shortcomings in current code regarding data persistence, then lay out the plan to incorporate MongoDB as part of it. Furthermore, emphasize error handling techniques as well as defensive programming practices to protect integrity and stability for data.</li>
                             </ul>
-                            <a href="https://youtu.be/KNq6Q0r7HcY" target="_blank">Code Review Demo</a>
                             </div>
+                            <p>
+                                <a href="https://youtu.be/KNq6Q0r7HcY" target="_blank">Code Review Demo</a>
+                            </p>
                         </p>
                     </p>
                 </div>
@@ -196,12 +198,10 @@
                         <br><br>
                         This artifact is a good example of my software engineering skills, as it is modular, efficient, and fault tolerant. The enhancement process improved the artifact, but it also deepened my knowledge of embedded software engineering best practices. This piece is now a representative and strong part of my ePortfolio.
                     </p>
-                    <p class="lead mb-5">
-                        <div class="lead">
-                            <a href="https://github.com/chrismarrs72/chrismarrs72.github.io/blob/51dbac951b0405b5e01952a4fed776b9fafe1bfe/assets/source/gpiointerrupt%20-%20ENH1.txt" target="_blank">Original Thermostat Main File</a>
-                            <br>
-                            <a href="https://github.com/chrismarrs72/chrismarrs72.github.io/blob/51dbac951b0405b5e01952a4fed776b9fafe1bfe/assets/source/gpiointerrupt%20-%20ENH2.txt" target="_blank">Enhanced Thermostat Main File</a>
-                        </div>
+                    <p class="lead">
+                        <a href="https://github.com/chrismarrs72/chrismarrs72.github.io/blob/51dbac951b0405b5e01952a4fed776b9fafe1bfe/assets/source/gpiointerrupt%20-%20ENH1.txt" target="_blank">Original Thermostat Main File</a>
+                        <br>
+                        <a href="https://github.com/chrismarrs72/chrismarrs72.github.io/blob/51dbac951b0405b5e01952a4fed776b9fafe1bfe/assets/source/gpiointerrupt%20-%20ENH2.txt" target="_blank">Enhanced Thermostat Main File</a>
                     </p>
 
                     <p class="lead">
@@ -239,11 +239,9 @@
                         The enhancements of the artifact, but it also helped me to better understand how to apply theoretical concepts in order to get meaningful results. This artifact is now a good example of my abilities in algorithms and data structure, which makes it a valuable part of my ePortfolio.
                     </p>
                     <p class="lead">
-                        <div>
-                            <a href="https://github.com/chrismarrs72/chrismarrs72.github.io/blob/51dbac951b0405b5e01952a4fed776b9fafe1bfe/assets/source/gpiointerrupt%20-%20ENH2.txt" target="_blank">Enhanced Thermostat Main File</a>
-                            <br>
-                            <a href="https://github.com/chrismarrs72/chrismarrs72.github.io/blob/e31e259a2bdafa11eaf8f7ba2ac1146c17367c8e/assets/source/gpiointerrupt.c" target="_blank">Final Thermostat Main File</a>
-                        </div>
+                        <a href="https://github.com/chrismarrs72/chrismarrs72.github.io/blob/51dbac951b0405b5e01952a4fed776b9fafe1bfe/assets/source/gpiointerrupt%20-%20ENH2.txt" target="_blank">Enhanced Thermostat Main File</a>
+                        <br>
+                        <a href="https://github.com/chrismarrs72/chrismarrs72.github.io/blob/e31e259a2bdafa11eaf8f7ba2ac1146c17367c8e/assets/source/gpiointerrupt.c" target="_blank">Final Thermostat Main File</a>
                     </p>
                     <p class="lead">
                         <h4>Enhancement Three - Databases</h4>
@@ -254,13 +252,15 @@
                         This artifact is included in my ePortfolio because it demonstrates my ability to design and implement database-driven solutions, a critical skill in modern computer science practices. Specific components of the artifact that showcase my abilities include:
                         <br><br>
                         The artifact has undergone several significant enhancements:
-                        <ul>
+                        <div class="lead">
+                            <ul>
                             <li>Database Integration - added MongoDB/DocumentDB support for storing real-time temperature readings, set-point values, and system statuses.</li>
                             <li>CRUD Operations via REST API and AWS Lambda functions were developed to provide API endpoints for the embedded system, allowing external systems or applications to retrieve and modify thermostat data.</li>
                             <li>Data Validation and Error Handling - robust error-handling mechanisms were implemented in both the embedded system and the Lambda functions to ensure data integrity and mitigate potential security risks.</li>
                             <li>Performance Optimization - in the design are query optimizations to ensure efficient data retrieval for real-time monitoring.</li>
                             <li>Modular Design - the database-related logic was modularized to make the codebase more maintainable and scalable.</li>
-                        </ul>
+                            </ul>
+                        </div>
                         <h5>Aligned Outcomes:</h5>
                         <div class="lead">
                             <ul>
